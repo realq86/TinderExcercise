@@ -1,26 +1,150 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mIm-f9-a8P">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5Fi-KA-D5m">
+            <objects>
+                <navigationController id="Klc-B9-HU9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OmB-4G-Djr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBQ-68-I0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1549" y="372"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TinderExcercise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="l6M-ee-Kv3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="bda-PM-as0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="df1-lf-16u">
+                                <rect key="frame" x="0.0" y="450" width="320" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="eKC-fi-uVp"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMc-K0-G6C" customClass="DraggableImageView" customModule="TinderExcercise" customModuleProvider="target">
+                                <rect key="frame" x="8" y="132" width="304" height="304"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="304" id="PnY-0T-auT"/>
+                                    <constraint firstAttribute="width" constant="304" id="cMP-rC-ugI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l6M-ee-Kv3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5p9-BY-KyK"/>
+                            <constraint firstAttribute="trailing" secondItem="l6M-ee-Kv3" secondAttribute="trailing" id="9ni-eH-QYO"/>
+                            <constraint firstAttribute="trailing" secondItem="df1-lf-16u" secondAttribute="trailing" id="IxZ-PG-ehb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="df1-lf-16u" secondAttribute="bottom" constant="10" id="MH7-Z6-SM1"/>
+                            <constraint firstItem="df1-lf-16u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T2O-bz-XYj"/>
+                            <constraint firstItem="aMc-K0-G6C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dTv-37-WKA"/>
+                            <constraint firstItem="aMc-K0-G6C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r52-BN-baG"/>
+                            <constraint firstItem="l6M-ee-Kv3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vTN-af-qse"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="21v-70-YnL"/>
+                    <connections>
+                        <outlet property="buttonRow" destination="df1-lf-16u" id="p0a-YB-gCk"/>
+                        <outlet property="profileImageViewContainer" destination="aMc-K0-G6C" id="d66-aB-8vq"/>
+                        <outlet property="profileImageViewContainerXConstraint" destination="r52-BN-baG" id="Yha-C0-2kn"/>
+                        <segue destination="L7o-7u-GKE" kind="presentation" identifier="ModalToProfile" id="oc8-tv-GrP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1111.875" y="123.59154929577466"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="6Bg-JS-KcL">
+            <objects>
+                <viewController id="L7o-7u-GKE" customClass="ProfileViewController" customModule="TinderExcercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fny-Ls-BTG"/>
+                        <viewControllerLayoutGuide type="bottom" id="pMe-hL-wjO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mzs-F9-d4S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="tha-Ja-mlE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="N1k-4y-GqT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YZc-xS-ecQ">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="QRl-s7-hWC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tha-Ja-mlE" firstAttribute="leading" secondItem="Mzs-F9-d4S" secondAttribute="leading" id="1GV-F9-uex"/>
+                            <constraint firstAttribute="trailing" secondItem="YZc-xS-ecQ" secondAttribute="trailing" id="39s-MA-LUe"/>
+                            <constraint firstItem="YZc-xS-ecQ" firstAttribute="centerY" secondItem="Mzs-F9-d4S" secondAttribute="centerY" id="Csj-ah-ZBp"/>
+                            <constraint firstItem="YZc-xS-ecQ" firstAttribute="leading" secondItem="Mzs-F9-d4S" secondAttribute="leading" id="WZn-8X-tCw"/>
+                            <constraint firstItem="tha-Ja-mlE" firstAttribute="top" secondItem="fny-Ls-BTG" secondAttribute="bottom" id="uAe-tY-JWi"/>
+                            <constraint firstAttribute="trailing" secondItem="tha-Ja-mlE" secondAttribute="trailing" id="yUY-di-UoA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fakeNavigationBar" destination="tha-Ja-mlE" id="3fS-ae-v6G"/>
+                        <outlet property="profileImageView" destination="YZc-xS-ecQ" id="P7h-1u-VES"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mO-HE-YIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1923.75" y="120.4225352112676"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RNo-dn-c4b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mIm-f9-a8P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dQF-Q6-sPV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rb2-Fy-F02"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ww9-gZ-UId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="123.59154929577466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
+    </resources>
 </document>

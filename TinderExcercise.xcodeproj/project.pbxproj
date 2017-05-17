@@ -14,6 +14,9 @@
 		8B228E101DD428D700B655FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B228E0E1DD428D700B655FF /* LaunchScreen.storyboard */; };
 		8B228E1B1DD428D700B655FF /* TinderExcerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B228E1A1DD428D700B655FF /* TinderExcerciseTests.swift */; };
 		8B228E261DD428D700B655FF /* TinderExcerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B228E251DD428D700B655FF /* TinderExcerciseUITests.swift */; };
+		8B228E341DD431D900B655FF /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B228E331DD431D900B655FF /* DraggableImageView.swift */; };
+		8B228E361DD431F200B655FF /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B228E351DD431F200B655FF /* DraggableImageView.xib */; };
+		8BF810C21EB5ACB300AA0981 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF810C11EB5ACB300AA0981 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		8B228E211DD428D700B655FF /* TinderExcerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderExcerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B228E251DD428D700B655FF /* TinderExcerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderExcerciseUITests.swift; sourceTree = "<group>"; };
 		8B228E271DD428D700B655FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B228E331DD431D900B655FF /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		8B228E351DD431F200B655FF /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
+		8BF810C11EB5ACB300AA0981 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				8B228E051DD428D700B655FF /* AppDelegate.swift */,
 				8B228E071DD428D700B655FF /* ViewController.swift */,
+				8B228E331DD431D900B655FF /* DraggableImageView.swift */,
+				8BF810C11EB5ACB300AA0981 /* ProfileViewController.swift */,
+				8B228E351DD431F200B655FF /* DraggableImageView.xib */,
 				8B228E091DD428D700B655FF /* Main.storyboard */,
 				8B228E0C1DD428D700B655FF /* Assets.xcassets */,
 				8B228E0E1DD428D700B655FF /* LaunchScreen.storyboard */,
@@ -237,6 +246,7 @@
 			files = (
 				8B228E101DD428D700B655FF /* LaunchScreen.storyboard in Resources */,
 				8B228E0D1DD428D700B655FF /* Assets.xcassets in Resources */,
+				8B228E361DD431F200B655FF /* DraggableImageView.xib in Resources */,
 				8B228E0B1DD428D700B655FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B228E081DD428D700B655FF /* ViewController.swift in Sources */,
+				8B228E341DD431D900B655FF /* DraggableImageView.swift in Sources */,
+				8BF810C21EB5ACB300AA0981 /* ProfileViewController.swift in Sources */,
 				8B228E061DD428D700B655FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +526,7 @@
 				8B228E2C1DD428D700B655FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B228E2D1DD428D700B655FF /* Build configuration list for PBXNativeTarget "TinderExcerciseTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				8B228E2F1DD428D700B655FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B228E301DD428D700B655FF /* Build configuration list for PBXNativeTarget "TinderExcerciseUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				8B228E321DD428D700B655FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

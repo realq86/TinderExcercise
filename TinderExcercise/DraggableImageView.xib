@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DraggableImageView" customModule="TinderExcercise" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="poP-Nl-E6u"/>
+                <outlet property="imageView" destination="u6T-nv-X7I" id="ByA-HO-VCj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6T-nv-X7I">
+                    <rect key="frame" x="20" y="0.0" width="415" height="284"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u6T-nv-X7I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AJ4-4R-aJ3"/>
+                <constraint firstAttribute="bottom" secondItem="u6T-nv-X7I" secondAttribute="bottom" id="V1D-Mj-9E5"/>
+                <constraint firstAttribute="trailing" secondItem="u6T-nv-X7I" secondAttribute="trailing" id="q4i-rl-9dD"/>
+                <constraint firstItem="u6T-nv-X7I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sFT-AJ-GEr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-9.5" y="-218"/>
+        </view>
+    </objects>
+</document>
